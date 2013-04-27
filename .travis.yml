@@ -2,10 +2,12 @@ language: c
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq doxygen
+  - sudo apt-get install -qq doxygen valgrind libpcap-dev
 
 before_script:
   - hg clone 'http://hg.linux-ha.org/%7Cexperimental/assimilation/'
+  - sudo pip install testify ctypesgen py2neo tornado
+
 script:
   - mkdir a
   - cd a
