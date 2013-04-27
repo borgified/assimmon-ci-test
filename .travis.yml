@@ -6,4 +6,5 @@ script:
   - cd a
   - pwd
   - cmake ../assimilation
+  - sudo apt-get install doxygen
   - cpack
