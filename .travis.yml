@@ -18,10 +18,10 @@ script:
 #run some tests
 
   - cd testcode
-  - ../../assimilation/testcode/grind.sh
-#  - cd ../../assimilation/cma
-#  - testify tests
-#  - ../../root_of_binary_tree/testcode/pinger ::1
+#  - ../../assimilation/testcode/grind.sh
+  - cd ../../assimilation/cma
+  - testify tests
+  - ../../root_of_binary_tree/testcode/pinger ::1
 
 services:
   - neo4j
