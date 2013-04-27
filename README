@@ -1,0 +1,5 @@
+The Assimilation Monitoring Project
+CI for AssimMon (http://assimmon.org)
+
+build status
+"!https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png!":https://travis-ci.org/borgified/assimmon-ci-test.png
