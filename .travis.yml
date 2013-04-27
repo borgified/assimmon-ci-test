@@ -2,8 +2,8 @@ language: c
 before_script:
   - hg clone 'http://hg.linux-ha.org/%7Cexperimental/assimilation/'
 script:
-  - cd ~
   - mkdir a
   - cd a
+  - pwd
   - cmake ../assimilation
   - cpack
