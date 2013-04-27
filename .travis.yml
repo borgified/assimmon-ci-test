@@ -6,4 +6,4 @@ script:
   - mkdir a
   - cd a
   - cmake ../assimilation
-
+  - cpack
