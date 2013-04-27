@@ -9,11 +9,19 @@ before_script:
   - sudo pip install testify ctypesgen py2neo tornado
 
 script:
-  - mkdir a
-  - cd a
+  - mkdir root_of_binary_tree
+  - cd root_of_binary_tree
   - pwd
   - cmake ../assimilation
   - cpack
+
+#run some tests
+
+  - cd testcode
+  - ../../assimilation/testcode/grind.sh
+  - cd ../../assimilation/cma
+  - testify tests
+  - ../../root_of_binary_tree/testcode/pinger ::1
 
 services:
   - neo4j
