@@ -8,3 +8,6 @@ script:
   - cmake ../assimilation
   - sudo apt-get install doxygen
   - cpack
+
+services:
+  - neo4j
