@@ -21,7 +21,7 @@ script:
   - cd testcode
 #  - ../../assimilation/testcode/grind.sh
   - cd ../../assimilation/cma
-#  - testify tests
+  - testify tests
   - ../../root_of_binary_tree/testcode/pinger ::1
 
 services:
