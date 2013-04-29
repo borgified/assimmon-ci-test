@@ -6,7 +6,8 @@ before_install:
 
 before_script:
   - hg clone 'http://hg.linux-ha.org/%7Cexperimental/assimilation/'
-  - sudo pip install testify ctypesgen py2neo tornado
+  - sudo pip install testify ctypesgen py2neo==1.4.5 tornado
+  - pip freeze
 
 script:
   - mkdir root_of_binary_tree
