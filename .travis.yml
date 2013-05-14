@@ -17,9 +17,9 @@ script:
   - cpack
 
 #run some tests
-
+  - netstat -a
   - cd testcode
-  - ../../assimilation/testcode/grind.sh
+  #- ../../assimilation/testcode/grind.sh
   - cd ../../assimilation/cma
   - testify tests
   - ../../root_of_binary_tree/testcode/pinger ::1
