@@ -17,7 +17,7 @@ script:
   - cpack
 
 #run some tests
-
+  - netstat -a
   - cd testcode
   - sudo ../../assimilation/testcode/grind.sh
 #  - cd ../../assimilation/cma
