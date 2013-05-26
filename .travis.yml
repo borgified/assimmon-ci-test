@@ -25,6 +25,7 @@ script:
 #run some tests
   - netstat -a
   - cd testcode
+  - sudo apt-get install strace
   - wget https://raw.github.com/borgified/diffdpkg/master/grind.sh
   - mv ./grind.sh ../../assimilation/testcode/.
   - chmod a+x ../../assimilation/testcode/grind.sh
