@@ -12,6 +12,9 @@ before_script:
   - pip freeze
   - dpkg-query --show
 
+services:
+  - neo4j
+
 script:
   - mkdir root_of_binary_tree
   - cd root_of_binary_tree
@@ -22,10 +25,11 @@ script:
 #run some tests
   - netstat -a
   - cd testcode
+  - wget https://raw.github.com/borgified/diffdpkg/master/grind.sh
+  - mv ./grind.sh ../../assimilation/testcode/.
   - sudo ../../assimilation/testcode/grind.sh
 #  - cd ../../assimilation/cma
 #  - testify tests
 #  - ../../root_of_binary_tree/testcode/pinger ::1
 
-services:
-  - neo4j
+
