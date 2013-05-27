@@ -16,27 +16,18 @@ before_script:
   - hg clone 'http://hg.linux-ha.org/%7Cexperimental/assimilation/'
   - sudo pip install testify ctypesgen py2neo==1.4.5 tornado
   - pip freeze
-  - dpkg-query --show
+#  - dpkg-query --show
 
 services:
   - neo4j
 
-script:
+install:
   - mkdir root_of_binary_tree
   - cd root_of_binary_tree
   - pwd
   - cmake ../assimilation
   - cpack
-
-install:
-  - cd ..
-  - mkdir new-binary-directory
-  - cd new-binary-directory
-  - cmake ../assimilation
-  - cpack
   - sudo dpkg -i assimilation-nanoprobe-0.1.0-amd64.deb
-
-run_netconfig:
   - /usr/share/assimilation/discovery_agents/netconfig
 
 #run some tests
