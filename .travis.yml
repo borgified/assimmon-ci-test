@@ -6,6 +6,8 @@ before_install:
   - env
   - sudo cat /var/log/syslog
   - sudo cat /var/log/auth.log
+  - sudo tail /var/log/syslog
+  - sudo tail /var/log/auth.log
 #  - sudo apt-get update -qq
 #  - sudo apt-get install -qq doxygen valgrind libpcap-dev
 
