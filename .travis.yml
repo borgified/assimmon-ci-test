@@ -4,6 +4,7 @@ before_install:
   - uname -a
   - cat /etc/issue
   - env
+  - cat /etc/network/interfaces
   - sudo cat /var/log/syslog
   - sudo cat /var/log/auth.log
   - sudo tail /var/log/syslog
