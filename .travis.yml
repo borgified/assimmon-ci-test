@@ -24,6 +24,8 @@ install:
   - cd root_of_binary_tree
   - pwd
   - cmake ../assimilation
+
+script:
   - cpack
   - sudo dpkg -i assimilation-nanoprobe-0.1.0-amd64.deb
   - /usr/share/assimilation/discovery_agents/netconfig
