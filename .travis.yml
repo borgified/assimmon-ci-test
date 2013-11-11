@@ -12,7 +12,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq doxygen valgrind libpcap-dev
   - hg clone 'http://hg.linux-ha.org/%7Cexperimental/assimilation/'
-  - sudo pip install testify ctypesgen py2neo==1.4.5 tornado
+  - sudo pip install testify ctypesgen py2neo tornado
   - pip freeze
 #  - dpkg-query --show
 
