@@ -38,6 +38,7 @@ script:
 #  - wget https://raw.github.com/borgified/diffdpkg/master/grind.sh
 #  - mv ./grind.sh ../../assimilation/testcode/.
 #  - chmod a+x ../../assimilation/testcode/grind.sh
+  - export BROKENDNS=1
   - sudo ../../assimilation/testcode/grind.sh
   - cd ../../assimilation/cma
   - testify tests
